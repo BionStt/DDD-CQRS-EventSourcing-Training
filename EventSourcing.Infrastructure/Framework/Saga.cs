@@ -1,0 +1,27 @@
+﻿using System;
+
+namespace EventSourcing.Infrastructure.Framework
+{
+    public abstract class Saga
+    {
+        public IBus Bus { get; private set; }
+        public EventStore.IEventStore EventStore { get; private set; }
+
+
+        protected Saga(IBus bus, EventStore.IEventStore eventStore)
+        {
+            if (bus == null)
+            {
+                throw new ArgumentNullException("bus");
+            }
+            //if (eventStore == null)
+            //{
+            //    throw new ArgumentNullException("eventStore");
+            //}
+
+            Bus = bus;
+            EventStore = eventStore;
+        }
+    }
+
+}
