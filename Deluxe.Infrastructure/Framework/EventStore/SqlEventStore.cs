@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Web.Script.Serialization;
+using Deluxe.Infrastructure.EventStore.SqlServer.Data;
+using Deluxe.Infrastructure.EventStore.SqlServer.Repositories;
 
 namespace Deluxe.Infrastructure.Framework.EventStore
 {

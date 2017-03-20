@@ -1,4 +1,5 @@
-﻿using Deluxe.Infrastructure.Persistence.SqlServer.Data;
+﻿using Deluxe.CommandStack.Domain.Model;
+using Deluxe.Infrastructure.Persistence.SqlServer.Data;
 
 namespace Deluxe.Infrastructure.Persistence.SqlServer.Repositories.Adapters
 {

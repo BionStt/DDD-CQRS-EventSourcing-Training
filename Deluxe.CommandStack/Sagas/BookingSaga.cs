@@ -1,10 +1,13 @@
 ﻿using Deluxe.CommandStack.Commands;
+using Deluxe.CommandStack.Domain.Model;
 using Deluxe.CommandStack.Events;
+using Deluxe.Infrastructure;
+using Deluxe.Infrastructure.Framework.Repositories;
+using Deluxe.Infrastructure.Persistence.SqlServer.Repositories;
 
 namespace Deluxe.CommandStack.Sagas
 {
-    public class BookingSaga : Saga,
-            IStartWithMessage<RequestBookingCommand>
+    public class BookingSaga : Saga, Infrastructure.Framework.IStartWithMessage<RequestBookingCommand>
     {
         private readonly IRepository _repository;
 

@@ -1,4 +1,8 @@
 ﻿using System;
+using Deluxe.CommandStack.Domain.Common;
+using Deluxe.CommandStack.Domain.Model;
+using Deluxe.Infrastructure.Framework;
+using Deluxe.Infrastructure.Framework.Repositories;
 using Deluxe.Infrastructure.Persistence.SqlServer.Data;
 using Deluxe.Infrastructure.Persistence.SqlServer.Repositories.Adapters;
 

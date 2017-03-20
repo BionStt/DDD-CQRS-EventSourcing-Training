@@ -1,4 +1,7 @@
-﻿namespace Deluxe.Infrastructure.Persistence.SqlServer.Data
+﻿using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+
+namespace Deluxe.Infrastructure.Persistence.SqlServer.Data
 {
     public partial class MerloEntities : DbContext
     {
